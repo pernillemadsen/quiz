@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 3 - Footer Nav</title>
+    <link rel="stylesheet" href="foundation-grid/css/foundation.css">
+    <script src="foundation-grid/js/custom.modernizr.js"></script>
+    
+  <style type="text/css">
+    body {
+        font-family: helvetica;
+        background-color: #F0FFFF;
+
+      }
+    /* mobile-first */
+    #site-nav ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+        margin-top: 50px;
+        
+    }
+    #site-nav li a {
+      display: block;
+      border-top: 1px solid #CCC;
+      padding: 3%;
+    }
+    #site-nav li:last-child a {
+      border-bottom: 1px solid #CCC;
+    }
+    #link-to-menu {
+      background: #333;
+      color: #FFFFFF;
+      font-size: 18px;
+      padding: 5px;
+      position: absolute;
+      right: 10px;
+      text-decoration: none;
+      top: 10px;
+    }
+      
+       #maintext{
+          width: 100%;
+           font-size: small;
+      }
+      #highscore {
+            width: 100%;
+          font-size: small;
+        }
+      
+     
+      
+      #newlyavailable{
+          width: 100%;
+          font-size: small;
+      }
+      
+      #newlyavailable ul{
+          column-count: 2;
+      }
+
+    /* tablet and desktop */
+    @media only screen and (min-width: 768px) {
+     #site-nav {
+       position: absolute;
+       top: 0;
+       left: 10%;
+       width: 90%;
+    
+     }
+     #link-to-menu {
+       display: none;
+     }
+     #site-nav li {
+       display: inline-block;
+       //margin: 0 5%;
+       padding: 0;
+       width: 18%;
+       border: none;
+       //line-height: 1.5;
+     }
+     #site-nav li a {
+       display: inline;
+       border: none;
+       padding: 0;
+     }
+     #site-nav li a,
+     #site-nav li:last-child a {
+       border: none;
+     }
+        #highscore {
+            width: auto;
+            font-size: medium;
+        }
+        #highscore h3{
+            text-align: center;
+        }
+        
+        #highscore li{
+            margin: 15px;
+        }
+        
+        #maintext{
+            width: auto;
+            font-size: medium;
+        }
+        
+        #maintext h2{
+            text-align: center;
+            margin: -10px;
+            
+        }
+        #newlyavailable{
+            width: auto;
+            font-size: medium;
+            
+        }
+        
+        #newlyavailable h3{
+            text-align: center;
+        }
+        
+        #newlyavailable ul{
+            column-count: 1;
+        }
+        
+        #newlyavailable li{
+            margin: 10px;
+            
+        }
+        
+        #maintext2{
+            text-align: center;
+            margin-top: 90px;
+        }
+        
+        #name h5{
+            text-decoration: underline;
+        }
+        #name ul{
+            list-style-type: none;
+        }
+        
+        #newquizzes h5{
+            text-decoration: underline;
+        }
+        
+        #newquizzes ul{
+            list-style-type: none;
+        }
+        #highscore2 h5{
+            text-decoration: underline;
+        }
+        #highscore2 ul {
+            list-style-type: none;
+        }
+        
+    }
+  </style>
+</head>
+<body>
+    <a id="link-to-menu" href="#site-nav">&#9776; Menu</a>
+    <br style="clear:both" />
+    
+    <div class="row">
+        <div class="small-2 columns"> <img src="LOGO.png"> </div>
+        <div class ="small-10 columns">
+            <nav id="site-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    
+    <div class="row">
+        <div class="small-3 columns" id="highscore">
+            <h3> High Score</h3>
+            <ul>
+                <li>500 point - Katte</li>
+                <li>90 point - Kähler vaser</li>
+                <li>68 point - Lamper</li>
+                <li>96 point - Dynebetræk</li>
+                <li>432 point - Alkohol</li>
+            </ul>
+        </div>
+        
+        <div class="small-6 columns" id="maintext">
+            <h2> Your quizzes </h2>
+            <br>
+            <br>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Mauris luctus risus et tincidunt mollis.</li>
+                <li>Vivamus non ante consectetur, volutpat ex in, vulputate.</li>
+                <li>Donec dignissim velit in tortor auctor facilisis.</li>
+                <li>Curabitur at odio id neque laoreet sodales.</li>
+                <li>Fusce at nibh pulvinar, eleifend orci nec, rhoncus augue.</li>
+            </ul>
+            
+            
+            
+            <h2 id="maintext2">Your friends</h2>
+            <div class="row">
+                <div class="small-4 columns" id="name">
+                    <h5>Name</h5>
+                    <ul>
+                        <li> Frida Hansen </li>
+                        <li> Henning Jensen</li>
+                        <li>Erik Rasmussen</li>
+                        <li>Ida Christiansen</li>
+                        <li>Sofie Johansen</li>
+                    </ul>
+                </div>
+                <div class="small-4 columns" id="newquizzes">
+                    <h5>New quizzes</h5>
+                    <ul>
+                        <li>Katte</li>
+                        <li>Medina</li>
+                        <li>Botanik</li>
+                        <li>Cykler</li>
+                        <li>Kage</li>
+                    </ul>
+                </div>
+                <div class="small-4 columns" id="highscore2">
+                    <h5> High Score</h5>
+                    <ul>
+                        <li>800 point</li>
+                        <li>30 point</li>
+                        <li>300 point</li>
+                        <li>650 point</li>
+                        <li>20.000 point</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="small-3 columns" id="newlyavailable">
+            <h3> Newly available </h3>
+            <ul>
+                <li>Møgunger</li>
+                <li>Sofaer</li>
+                <li>Computer</li>
+                <li>Muffins</li>
+                <li>Gaver</li>
+                <li>Kaktusser</li>
+                <li>Bøger</li>
+                <li>Tæpper</li>
+                <li>Lamper</li>
+                <li>Chokolade</li>
+                <li>Frugt</li>
+                <li>Alkohol</li>
+                <li>Spilkonsoller</li>
+                <li>Kaffe</li>
+                <li>Kähler vaser</li>
+                <li>Højtalere</li>
+                <li>Dynebetræk</li>
+            </ul>
+        </div>
+    
+    
+    </div>
+
+</body>
+</html>
